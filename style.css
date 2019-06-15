@@ -27,10 +27,11 @@ body {
 h1 {
     color: #fff;
     font-size: 4rem;
+    text-align: center;
 
 }
 
-section.start,
+section.play,
 .info {
     display: flex;
     flex-direction: column;
@@ -39,7 +40,7 @@ section.start,
 
 .game {
     width: 45vw;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     margin: 10vh 0 0 0;
 }
@@ -48,7 +49,7 @@ section.start,
     width: 33%;
     height: 100%;
     background-color: #747474;
-    margin: 0 1vw;
+    margin: 0 2vw;
 }
 
 input {
@@ -70,7 +71,7 @@ button:focus {
     outline: none;
 }
 
-#play {
+#start {
     width: 20vw;
     height: 10vh;
     background-color: #60397a;
@@ -79,4 +80,58 @@ button:focus {
     color: #fff;
     cursor: pointer;
     margin: 5vh 0 0 0;
+    font-size: 2rem;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width:450px) {
+    .game {
+        width: 85vw;
+        height: 18vh;
+    }
+
+    input {
+        width: 35vw;
+    }
+
+    #start {
+        height: 7vh;
+        font-size: 1.5rem;
+        width: 30vw;
+    }
+}
+
+@media (min-width:1600px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .game {
+        width: 50vw;
+    }
+
+    input {
+        font-size: 2rem;
+    }
+
+    #start {
+        font-size: 3rem;
+    }
+}
+
+@media (min-height:900px) and (max-width:1280px) {
+    .game {
+        height: 15vh;
+        width: 60vw;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    input {
+        font-size: 2rem;
+        width: 30vw;
+    }
 }
