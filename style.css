@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #272727;
+
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+section.play,
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game {
+    width: 45vw;
+    height: 25vh;
+    display: flex;
+    margin: 10vh 0 0 0;
+}
+
+.color {
+    width: 33%;
+    height: 100%;
+    background-color: #747474;
+    margin: 0 2vw;
+}
+
+input {
+    width: 15vw;
+    height: 5vh;
+    text-align: center;
+    background-color: #4c4a4a;
+    color: #fff;
+    border-radius: 5%;
+    border: solid 2px #fff;
+    margin: 5vh 0 0 0;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#start {
+    width: 20vw;
+    height: 10vh;
+    background-color: #60397a;
+    border: none;
+    border-radius: 2%;
+    color: #fff;
+    cursor: pointer;
+    margin: 5vh 0 0 0;
+    font-size: 2rem;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1600px) {
+    input {
+        font-size: 2rem;
+    }
+
+    #start {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+    .game {
+        height: 18vh;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 20vw;
+    }
+
+    #start {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .game {
+        height: 13vh;
+        width: 55vw;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 25vw;
+
+    }
+
+    #start {
+        height: 8vh;
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width: 850px) and (min-width: 500px) {
+    input {
+        height: 8vh;
+        width: 22vw;
+    }
+
+    #start {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .game {
+        height: 10vh;
+        width: 60vw;
+    }
+
+    input {
+        width: 27vw;
+    }
+
+    #start {
+        height: 7vh;
+        width: 25vw;
+        font-size: 1.8rem;
+    }
+}
