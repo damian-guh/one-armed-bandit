@@ -135,3 +135,10 @@ button:focus {
         width: 30vw;
     }
 }
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+    .game {
+        height: 17vh;
+        width: 50vw;
+    }
+}
