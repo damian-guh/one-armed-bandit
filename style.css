@@ -40,7 +40,7 @@ section.play,
 
 .game {
     width: 45vw;
-    height: 30vh;
+    height: 25vh;
     display: flex;
     margin: 10vh 0 0 0;
 }
@@ -85,32 +85,7 @@ button:focus {
     text-transform: uppercase;
 }
 
-@media (max-width:450px) {
-    .game {
-        width: 85vw;
-        height: 18vh;
-    }
-
-    input {
-        width: 35vw;
-    }
-
-    #start {
-        height: 7vh;
-        font-size: 1.5rem;
-        width: 30vw;
-    }
-}
-
-@media (min-width:1600px) {
-    h1 {
-        font-size: 5rem;
-    }
-
-    .game {
-        width: 50vw;
-    }
-
+@media (min-width: 1600px) {
     input {
         font-size: 2rem;
     }
@@ -118,27 +93,83 @@ button:focus {
     #start {
         font-size: 3rem;
     }
-}
-
-@media (min-height:900px) and (max-width:1280px) {
-    .game {
-        height: 15vh;
-        width: 60vw;
-    }
 
     h1 {
         font-size: 5rem;
-    }
-
-    input {
-        font-size: 2rem;
-        width: 30vw;
     }
 }
 
 @media (max-width: 1100px) and (min-width: 1000px) {
     .game {
-        height: 17vh;
-        width: 50vw;
+        height: 18vh;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 20vw;
+    }
+
+    #start {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .game {
+        height: 13vh;
+        width: 55vw;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 25vw;
+
+    }
+
+    #start {
+        height: 8vh;
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width: 850px) and (min-width: 500px) {
+    input {
+        height: 8vh;
+        width: 22vw;
+    }
+
+    #start {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .game {
+        height: 10vh;
+        width: 60vw;
+    }
+
+    input {
+        width: 27vw;
+    }
+
+    #start {
+        height: 7vh;
+        width: 25vw;
+        font-size: 1.8rem;
     }
 }
