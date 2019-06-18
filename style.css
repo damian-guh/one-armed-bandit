@@ -85,6 +85,21 @@ button:focus {
     text-transform: uppercase;
 }
 
+.info {
+    height: 10vh;
+    width: 50vw;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2vh;
+}
+
+.info span {
+    height: 25%;
+    width: 100%;
+    margin-top: 1vh;
+}
+
 @media (min-width: 1600px) {
     input {
         font-size: 2rem;
